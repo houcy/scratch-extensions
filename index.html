@@ -50,14 +50,16 @@
               "<dt>random 0-1</dt>",
               "<dd>Generates a fairly long random decimal from 0 to 1.</dd>",
             "</dl>"
-          ]
+          ],
+          url: "http://scratchx.org/?url=https://liam4.github.io/scratch-extensions/firstextension/firstextension.js"
         }
       };
       
       var load = function() {
         if (document.location.hash.slice(1) === 'firstextension') {
-          document.getElementById("extension-title").innerHTML = extensionData[document.location.hash.slice(1)].title;
-          document.getElementById("extension-info").innerHTML = extensionData[document.location.hash.slice(1)].data.join("\n");
+          var data = extensionData[document.location.hash];
+          document.getElementById("extension-title").innerHTML = "<a target='_blank' href='" + data.url + "'>" + data.title + "</a>";
+          document.getElementById("extension-info").innerHTML = data.data.join("\n");
         }
         
         var aEls = document.getElementsByTagName("a");
