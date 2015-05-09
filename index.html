@@ -55,20 +55,20 @@
         }
       };
       
+      var lastLoaded = null;
+      
       var load = function() {
-        if (document.location.hash.slice(1) === 'firstextension') {
-          var data = extensionData[document.location.hash.slice(1)];
-          document.getElementById("extension-title").innerHTML = "<a target='_blank' href='" + data.url + "'>" + data.title + "</a>";
-          document.getElementById("extension-info").innerHTML = data.data.join("\n");
+        if (document.location.hash !== lastLoaded) {
+          if (document.location.hash.slice(1) === 'firstextension') {
+            var data = extensionData[document.location.hash.slice(1)];
+            document.getElementById("extension-title").innerHTML = "<a target='_blank' href='" + data.url + "'>" + data.title + "</a>";
+            document.getElementById("extension-info").innerHTML = data.data.join("\n");
+          }
+          lastLoaded = document.location.hash;
         }
-        
-        /*var aEls = document.getElementsByTagName("a");
-        for (var i = 0; i < aEls.length; i++) {
-          aEls[i].onclick = load;
-        }*/
       };
       
-      window.setInterval(load, 500);
+      window.setInterval(load, 1000);
     </script>
   </body>
 </html>
