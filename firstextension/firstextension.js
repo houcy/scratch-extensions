@@ -19,4 +19,6 @@
       ['r', 'random 0-1', 'random']
     ]
   };
+  
+  ScratchExtensions.register('First Extension', descriptor, ext)
 })({});
