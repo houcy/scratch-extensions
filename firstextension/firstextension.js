@@ -1,3 +1,5 @@
+alert("Loading First Extension");
+
 (function(ext) {
   ext._shutdown = function() {};
   
@@ -22,3 +24,5 @@
   
   ScratchExtensions.register('First Extension', descriptor, ext)
 })({});
+
+alert("Loaded First Extension");
