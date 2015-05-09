@@ -28,12 +28,7 @@
       
       if (document.location.hash === 'firstextension') {
         document.getElementById("extension-title").innerHTML = extensionData[document.location.hash].title;
-        var html = "";
-        var info = extensionData[document.location.hash].info;
-        for (var i = 0; i < info.length; i++) {
-          html += info[i] + "\n";
-        }
-        document.getElementById("extension-info").innerHTML = html;
+        document.getElementById("extension-info").innerHTML = extensionData[document.location.hash].data.join("\n");
       }
     </script>
   </body>
