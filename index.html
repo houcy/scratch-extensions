@@ -57,7 +57,7 @@
       
       var load = function() {
         if (document.location.hash.slice(1) === 'firstextension') {
-          var data = extensionData[document.location.hash].slice(1);
+          var data = extensionData[document.location.hash.slice(1)];
           document.getElementById("extension-title").innerHTML = "<a target='_blank' href='" + data.url + "'>" + data.title + "</a>";
           document.getElementById("extension-info").innerHTML = data.data.join("\n");
         }
