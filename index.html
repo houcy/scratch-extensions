@@ -54,10 +54,17 @@
         }
       };
       
-      if (document.location.hash.slice(1) === 'firstextension') {
-        document.getElementById("extension-title").innerHTML = extensionData[document.location.hash.slice(1)].title;
-        document.getElementById("extension-info").innerHTML = extensionData[document.location.hash.slice(1)].data.join("\n");
-      }
+      var load = function() {
+        if (document.location.hash.slice(1) === 'firstextension') {
+          document.getElementById("extension-title").innerHTML = extensionData[document.location.hash.slice(1)].title;
+          document.getElementById("extension-info").innerHTML = extensionData[document.location.hash.slice(1)].data.join("\n");
+        }
+        
+        var aEls = document.getElementsByTagName("a");
+        for (var i = 0; i < aEls.length; i++) {
+          aEls[i].onclick = load;
+        }
+      };
     </script>
   </body>
 </html>
