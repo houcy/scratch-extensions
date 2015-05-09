@@ -62,13 +62,13 @@
           document.getElementById("extension-info").innerHTML = data.data.join("\n");
         }
         
-        var aEls = document.getElementsByTagName("a");
+        /*var aEls = document.getElementsByTagName("a");
         for (var i = 0; i < aEls.length; i++) {
           aEls[i].onclick = load;
-        }
+        }*/
       };
       
-      load();
+      document.setInterval(load, 125);
     </script>
   </body>
 </html>
