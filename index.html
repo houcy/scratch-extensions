@@ -26,6 +26,7 @@
         }
       };
       
+      console.log(document.location.hash);
       if (document.location.hash === 'firstextension') {
         document.getElementById("extension-title").innerHTML = extensionData[document.location.hash].title;
         document.getElementById("extension-info").innerHTML = extensionData[document.location.hash].data.join("\n");
