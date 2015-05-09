@@ -1,4 +1,2 @@
 # scratch-extensions
-Various Scratch Extensions. Here's the URLs to each extension:
-
-[First Extension](//scratchx.org/?url=http://liam4.github.io/scratch-extensions/firstextension/firstextension.js)
+Various Scratch Extensions. I'd suggest you go check out the [index](https://liam4.github.io/scratch-extensions/index.html). Or maybe you want to see [my Scratch profile](https://scratch.mit.edu/users/liam48D)?
