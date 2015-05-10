@@ -1,3 +1,7 @@
+console.log('Better Broadcasts by liam4');
+console.log('https://scratch.mit.edu/users/liam48D');
+console.log('https://github.com/liam4');
+
 betterBroadcasts = {
   broadcastsNow: [
     // Broadcasts that are currently active will
@@ -32,6 +36,9 @@ betterBroadcasts = {
     url: "https://liam4.github.io/scratch-extensions/index.php#betterbroadcasts",
   };
   
+  console.log('Unregistering Better Broadcasts');
   ScratchExtensions.unregister('Better Broadcasts');
+  console.log('Registering Better Broadcasts');
   ScratchExtensions.register('Better Broadcasts', descriptor, ext);
+  console.log('Registered Better Broadcasts');
 });
