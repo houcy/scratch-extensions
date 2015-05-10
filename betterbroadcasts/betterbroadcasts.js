@@ -30,11 +30,7 @@ betterBroadcasts = {
       // Type, spec, function (in quotes), default values.
       ['h', 'when I receive bbc %s', 'better broadcast 1'],
       [' ', 'better broadcast %s', 'better broadcast 1']
-    ],
-    menus: {
-      // Name: [contents...]
-    },
-    url: "https://liam4.github.io/scratch-extensions/index.php#betterbroadcasts",
+    ]
   };
   
   console.log('Unregistering Better Broadcasts');
