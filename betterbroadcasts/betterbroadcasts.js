@@ -32,5 +32,6 @@ betterBroadcasts = {
     url: "https://liam4.github.io/scratch-extensions/index.php#betterbroadcasts",
   };
   
+  ScratchExtensions.unregister('Better Broadcasts');
   ScratchExtensions.register('Better Broadcasts', descriptor, ext);
 });
