@@ -16,7 +16,7 @@ betterBroadcasts = {
   ]
 };
 
-(function() {
+(function(ext) {
   ext._status = function() {
     return {status: 2, msg: 'Ready'};
   };
@@ -41,4 +41,4 @@ betterBroadcasts = {
   console.log('Registering Better Broadcasts');
   ScratchExtensions.register('Better Broadcasts', descriptor, ext);
   console.log('Registered Better Broadcasts');
-});
+})({});
