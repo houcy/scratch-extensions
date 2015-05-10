@@ -17,6 +17,7 @@ betterBroadcasts = {
 };
 
 (function(ext) {
+  ext._shutdown = function() {};
   ext._status = function() {
     return {status: 2, msg: 'Ready'};
   };
